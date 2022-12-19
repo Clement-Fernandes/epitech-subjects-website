@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkepitech_subjects_website=self.webpackChunkepitech_subjects_website||[]).push([[4533],{9692:e=>{e.exports=JSON.parse('{"label":"docusaurus","permalink":"/epitech-subjects-website/blog/tags/docusaurus","allTagsPath":"/epitech-subjects-website/blog/tags","count":4}')}}]);
