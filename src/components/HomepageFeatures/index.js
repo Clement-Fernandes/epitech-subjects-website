@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/website.svg').default,
     description: (
       <>
-        Epitech Sujects was designed from the ground up to be easily
+        Epitech Subjects was designed from the ground up to be easily
         used for anybody.
       </>
     ),
