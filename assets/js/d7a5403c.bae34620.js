@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkepitech_subjects_website=self.webpackChunkepitech_subjects_website||[]).push([[5993],{2565:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/epitech-subjects-website/blog/tags/hola","allTagsPath":"/epitech-subjects-website/blog/tags","count":1}')}}]);

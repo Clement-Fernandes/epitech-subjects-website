@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkepitech_subjects_website=self.webpackChunkepitech_subjects_website||[]).push([[4343],{3663:e=>{e.exports=JSON.parse('{"permalink":"/epitech-subjects-website/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
