@@ -13,6 +13,7 @@
 ## Local Development
 
 ```
+$ npm install
 $ npm start
 ```
 
