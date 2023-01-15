@@ -15,6 +15,8 @@ src_path="./subjects"
 # Chemin du dossier docs
 dst_path="./docs"
 
+touch "docs/intro.md"
+
 # Parcours récursif des dossiers dans subjects
 for dir in $(find $src_path -type d); do
     # Création du chemin relatif du dossier courant
