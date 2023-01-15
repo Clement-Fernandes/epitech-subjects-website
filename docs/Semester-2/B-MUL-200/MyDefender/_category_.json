@@ -1,1 +1,7 @@
-{"label": "MyDefender","link": {"type": "generated-index", "description": "To define"}}
+{
+  "label": "MyDefender",
+  "link": {
+    "type": "generated-index",
+    "description": "To define"
+  }
+}

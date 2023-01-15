@@ -1,1 +1,7 @@
-{"label": "B-WEB-200","link": {"type": "generated-index", "description": "To define"}}
+{
+  "label": "B-WEB-200",
+  "link": {
+    "type": "generated-index",
+    "description": "To define"
+  }
+}

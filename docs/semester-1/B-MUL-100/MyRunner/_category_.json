@@ -1,1 +1,7 @@
-{"label": "MyRunner","link": {"type": "generated-index", "description": "To define"}}
+{
+  "label": "MyRunner",
+  "link": {
+    "type": "generated-index",
+    "description": "To define"
+  }
+}
