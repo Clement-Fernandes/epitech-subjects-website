@@ -24,9 +24,8 @@ If you want to **contribute** or you have found a problem, you can do it by crea
 
 ## All these semesters are available
 
+- [Semester 0](/docs/category/semester-0)
 - [Semester 1](/docs/category/semester-1)
-
-<!-- - [Semester 2](/docs/category/semester-2)
+- [Semester 2](/docs/category/semester-2)
 - [Semester 3](/docs/category/semester-3)
 - [Semester 4](/docs/category/semester-4)
-- [Semester 5](/docs/category/semester-5) -->
