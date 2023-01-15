@@ -1,1 +1,7 @@
-{"label": "MyWorld","link": {"type": "generated-index", "description": "To define"}}
+{
+  "label": "MyWorld",
+  "link": {
+    "type": "generated-index",
+    "description": "To define"
+  }
+}

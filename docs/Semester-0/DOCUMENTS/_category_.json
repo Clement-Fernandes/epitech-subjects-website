@@ -1,1 +1,7 @@
-{"label": "DOCUMENTS","link": {"type": "generated-index", "description": "To define"}}
+{
+  "label": "DOCUMENTS",
+  "link": {
+    "type": "generated-index",
+    "description": "To define"
+  }
+}

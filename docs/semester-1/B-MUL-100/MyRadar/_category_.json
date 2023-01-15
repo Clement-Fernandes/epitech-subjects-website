@@ -1,1 +1,7 @@
-{"label": "MyRadar","link": {"type": "generated-index", "description": "To define"}}
+{
+  "label": "MyRadar",
+  "link": {
+    "type": "generated-index",
+    "description": "To define"
+  }
+}
