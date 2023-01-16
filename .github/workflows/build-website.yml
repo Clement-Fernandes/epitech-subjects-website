@@ -10,7 +10,9 @@ jobs:
 
       steps:
         - name: see were i am
-          run: ls
+          run: |
+            pwd
+            ls
           shell: bash
         - name: Run script to generate website
           run: ./.github/script.sh
