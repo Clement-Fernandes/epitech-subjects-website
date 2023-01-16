@@ -21,7 +21,7 @@ touch "docs/intro.md"
 cp ".github/intro.md" "docs/intro.md"
 
 # Recursively browse the 'subjects' folder
-for dir in $(find $src_path -type d); do
+for dir in "$(find "$src_path" -type d)"; do
     # Vérifie de ne pas copier le dossier .git et .github
     if [[ $dir == *".git"* || $dir == *".github"* ]]; then
       continue
@@ -32,7 +32,7 @@ for dir in $(find $src_path -type d); do
     abs_path="$dst_path/$rel_path"
 
     # Verify if the current folder contains a pdf file
-    if [ -n "$(find $dir -maxdepth 1 -name '*.pdf')" ]; then
+    if [ -n "$(find "$dir" -maxdepth 1 -name '*.pdf')" ]; then
         # Create the .mdx file in the docs folder
         IFS='/' read -ra ADDR <<< "$rel_path"
         echo -e "---\ntitle: Firtree\ntags:" >> "$abs_path.mdx"
@@ -42,7 +42,7 @@ for dir in $(find $src_path -type d); do
         echo -e "---\n> Timeline: ?\n\n" >> "$abs_path.mdx"
         # Complete the .mdx file with the content of the directory
         echo -e "## Files 📂\n\n:::note 2020 Subject and Files" >> "$abs_path.mdx"
-        find $dir -maxdepth 1 -type f -not -name '*.md' -not -name 'tests.txt' -exec bash -c 'string={}; filename=$(basename "$string"); echo "- [$filename]($string)"' \; >> "$abs_path.mdx"
+        find "$dir" -maxdepth 1 -type f -not -name '*.md' -not -name 'tests.txt' -exec bash -c 'string={}; filename=$(basename "$string"); echo "- [$filename]($string)"' \; >> "$abs_path.mdx"
         echo -e ":::\n" >> "$abs_path.mdx"
             echo -e "## Tests 🤖\n<details>\n  <summary>Toggle to see the tests</summary>\n  <div>" >> "$abs_path.mdx"
             echo "Yo" >> "$abs_path.mdx"
@@ -56,7 +56,7 @@ for dir in $(find $src_path -type d); do
         sed -i '' -e 's|./subjects/|https://github.com/Studio-17/Epitech-Subjects/raw/main/|g' "$abs_path.mdx"
     else
         # Create the folder in the 'docs' folder
-        mkdir -p $abs_path
+        mkdir -p "$abs_path"
         # Create the category.json file in the current folder
         touch "$abs_path/_category_.json"
         # Add the content of the '_category_.json' file
