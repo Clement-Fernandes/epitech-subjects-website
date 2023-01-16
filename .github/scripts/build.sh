@@ -44,9 +44,6 @@ for dir in $(find $src_path -type d); do
         echo -e "## Files 📂\n\n:::note 2020 Subject and Files" >> "$abs_path.mdx"
         find $dir -maxdepth 1 -type f -not -name '*.md' -not -name 'tests.txt' -exec bash -c 'string={}; filename=$(basename "$string"); echo "- [$filename]($string)"' \; >> "$abs_path.mdx"
         echo -e ":::\n" >> "$abs_path.mdx"
-            echo -e "## Tests 🤖\n<details>\n  <summary>Toggle to see the tests</summary>\n  <div>" >> "$abs_path.mdx"
-            echo "Yo" >> "$abs_path.mdx"
-            echo -e "  </div>\n</details>\n" >> "$abs_path.mdx"
         if [ -f "$dir/tests.txt" ]; then
             # Add the tests in the .mdx file
             echo -e "## Tests 🤖\n<details>\n  <summary>Toggle to see the tests</summary>\n  <div>" >> "$abs_path.mdx"
