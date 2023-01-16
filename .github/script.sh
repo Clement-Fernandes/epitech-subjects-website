@@ -35,7 +35,7 @@ for dir in $(find $src_path -type d); do
     if [ -n "$(find $dir -maxdepth 1 -name '*.pdf')" ]; then
         # Create the .mdx file in the docs folder
         IFS='/' read -ra ADDR <<< "$rel_path"
-        echo -e "---\ntitle: Firtree\ntags:" >> "$abs_path.mdx"
+        echo -e "---\ntitle: ${abs_path##*/}\ntags:" >> "$abs_path.mdx"
         for i in "${ADDR[@]}"; do
           echo "  - $i" >> "$abs_path.mdx"
         done
@@ -60,10 +60,10 @@ for dir in $(find $src_path -type d); do
         # Create the category.json file in the current folder
         touch "$abs_path/_category_.json"
         # Add the content of the '_category_.json' file
-        echo "{\"label\": \"$rel_path\",\"link\": {\"type\": \"generated-index\", \"description\": \"To define\"}}" >> "$abs_path/_category_.json"
+        echo "{\"label\": \"${rel_path##*/}\",\"link\": {\"type\": \"generated-index\", \"description\": \"To define\"}}" >> "$abs_path/_category_.json"
     fi
 done
 
-# Delete the folders that we don't need anymore
+# Delete the folders that we don't need anymoregit status
 rm -rf ./subjects
 rm -rf ./docs/subjects
