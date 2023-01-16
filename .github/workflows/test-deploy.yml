@@ -1,11 +1,10 @@
 name: Test deployment
 
 on:
-  pull_request:
-    branches:
-      - main
-    # Review gh actions docs if you want to further define triggers, paths, etc
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+  workflow_run:
+    workflows: ["Build Website"]
+    types:
+      - completed
 
 jobs:
   test-deploy:

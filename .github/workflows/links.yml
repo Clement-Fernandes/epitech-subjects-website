@@ -1,6 +1,10 @@
 name: Check Markdown links
 
-on: push
+on:
+  workflow_run:
+    workflows: ["Build Website"]
+    types:
+      - completed
 
 jobs:
   markdown-link-check:
