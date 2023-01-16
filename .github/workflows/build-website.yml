@@ -1,0 +1,21 @@
+name: Build Website
+
+on:
+    workflow_call:
+    workflow_dispatch:
+
+jobs:
+  epitech-subjects:
+      runs-on: macos-latest
+
+      steps:
+        - name: Run script to generate website
+          run: |
+              ./.github/script.sh
+        - name: Commit changes
+          run: |
+              git config --global user.email "clement.fernandes@epitech.eu"
+              git config --global user.name "Clément Fernandes"
+              git add .
+              git commit -m "Generated the website"
+              git push
