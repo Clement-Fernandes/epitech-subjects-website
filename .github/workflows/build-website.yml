@@ -3,10 +3,13 @@ name: Build Website
 on:
     workflow_call:
     workflow_dispatch:
+    push:
+      branches:
+        - main
 
 jobs:
   epitech-subjects:
-      runs-on: ubuntu-latest
+      runs-on: macos-latest
 
       steps:
         - uses: actions/checkout@v2
