@@ -60,10 +60,10 @@ for dir in $(find $src_path -type d); do
         # Create the category.json file in the current folder
         touch "$abs_path/_category_.json"
         # Add the content of the '_category_.json' file
-        echo "{\"label\": \"${rel_path##*/}\",\"link\": {\"type\": \"generated-index\", \"description\": \"To define\"}}" >> "$abs_path/_category_.json"
+        echo "{\"label\": \"${rel_path##*/}\",\"link\": {\"type\": \"generated-index\", \"description\": \"?\"}}" >> "$abs_path/_category_.json"
     fi
 done
 
-# Delete the folders that we don't need anymoregit status
+# Delete the folders that we don't need anymore
 rm -rf ./subjects
 rm -rf ./docs/subjects
