@@ -6,7 +6,7 @@ on:
 
 jobs:
   epitech-subjects:
-      runs-on: macos-latest
+      runs-on: ubuntu-latest
 
       steps:
         - name: see were i am
@@ -15,7 +15,7 @@ jobs:
             ls
           shell: bash
         - name: Run script to generate website
-          run: ./.github/scripts/script.sh
+          run: ./.github/scripts/build.sh
           shell: bash
         - name: Commit changes
           run: |
