@@ -9,7 +9,7 @@ const FeatureList = [
     description: (
       <>
         Epitech Subjects was designed from the ground up to be easily
-        used for anybody.
+        used by anybody.
       </>
     ),
   },
@@ -18,7 +18,7 @@ const FeatureList = [
     Svg: require('@site/static/img/students.svg').default,
     description: (
       <>
-        The <code>Studio17</code> is a private group of Epitech student's
+        The <code>Studio17</code> is a private group of Epitech students.
       </>
     ),
   },
